@@ -6,11 +6,11 @@ This document describes a protocol for the creation of "light agents". What they
 
 ## Light Agents
 
-### What is a light agent?
+### What is a light agent
 
 Indy agents have DID's, key management, adhere to certain protocols, etc. Simply put light agents aren't restricted to these protocols, and instead they operate as **extenstions** of a full indy-agent. Think of them as a remote device issuing commands to a module. For example a remote to a TV set, or in agent land a remote web page that issues commands to a full indy-agent living on a server or device. This "agent" does not have full functionality but can issue commands to an entitiy that does have full functionality.
 
-### Why do we need light agents?
+### Why do we need light agents
 
 Agents are an amazing idea, but like many pieces of software they have limitatations. One of the biggest limiations of an agent is execution environment. 
 
