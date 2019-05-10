@@ -1,0 +1,9 @@
+# The need of libindy
+
+## Why a light agent without libindy is a bad idea
+
+When I first starting conceptualizing my vision for light agents, I pictured the bare minimum functionality required to make a light agent possible. These agents need to be quick on their feet so to speak. Fast. Small. Light. I still stand by that definition, but some of the parameters have changed. I used to think that the full libindy package was to *large* for something like a light agent (ie a browser js package for example). The browser, especially on devices that are unable to fully take advantage of all of the web's wonderful features needed to have small deliverable packets that can be run in the bare minimum circumstances. 
+
+One of the big advantages to using libindy is it takes care of handling the key types for us. With libindy using the wallet I do not have to be concerned that someone inputs an invalid stream of bytes for the key, wrong keytype, etc. While we can add key handling and error handling its not the same as just allowing the wallet to handle it for us. I am also of the belief that by telling web developers WE are handling key management for them (when I say WE I mean libindy) I believe that my further lesson the developer impact of the package. The goal is to make a package that is as light and seamless to use as possible. That is our primary goal. There are layers of security in the libindy wallet that maybe we need to leverage.
+
+Libindy has been years in the making and has had some of the best names and thought leadership in cryptography and credentials working on it. Instead of reinventing the wheel we instead find ways to bring libindy to every platform available (i believe WASM is this platform, especially getting it to run on the web). Maybe one day a libindylight can be created that breaks up libindy into smaller consumable chunks, but for now I think libindy on the web is infact the single best solution for consumption.
